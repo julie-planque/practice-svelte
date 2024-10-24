@@ -49,9 +49,9 @@
 <div>
     <div class="row">
         {#if $movies.length > 0}
-            <ul>
+            <ul class="movie-list">
                 {#each $movies as movie}
-                    <li class="col-md-4">
+                    <li class="col-md-4 movie">
                         <Movie {movie} />
                     </li>
                 {/each}
@@ -64,20 +64,16 @@
     </div>
 </div>
 <style>
-    ul {
+    .movie-list {
         list-style: none;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         padding: 30px 0px;
 
-        li {
+        .movie {
             width: 300px;
             margin: 8px;
         }
-    }
-
-    .movie-poster {
-        width: 300px;
     }
 </style>

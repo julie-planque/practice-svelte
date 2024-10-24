@@ -5,14 +5,3 @@
 <div class="movie-item">
     <img {src} alt="{movie.title}" class="movie-poster" />
 </div>
-<style>
-    .movie-item {
-
-    }
-    
-    .movie-poster {
-
-    }
-    
-    .movie-title {}
-    </style>
